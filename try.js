@@ -136,6 +136,38 @@ for(j = 0; j <3; j++){
             }
         }
     }
+     if(over == false)  //checks for ties
+    {
+    if(board[0][0] == "X" || board[0][0] =="O"){
+        if(board[0][1] == "X" ||board[0][1] == "O"){
+            if(board[0][2] == "X" ||board[0][2] == "O"){
+                if(board[1][0] == "X" || board[1][0] =="O"){
+                    if(board[1][1] == "X" ||board[1][1] == "O"){
+                        if(board[1][2] == "X" || board[1][2] =="O"){
+                            if(board[2][0] == "X" || board[2][0] =="O"){
+                                if(board[2][1] == "X" ||board[2][1] == "O"){
+                                    if(board[2][2] == "X" || board[2][2] =="O"){
+                                        over = true;
+                                        document.getElementById("rule").innerHTML = "Tie"; 
+                                        document.getElementById("res").style.visibility = "visible";
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+    }
+} //Checks for ties 
 
 }
 function set(id) {
